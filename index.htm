@@ -47,11 +47,28 @@ Jung-Sang Ahn</span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 14pt; font-weight: 700">Employment and Education</span></p>
 <ul>
-	<li>Software Engineer, Couchbase, 2015 - present.</li>
-	<li>Ph.D. in Computer Science, KAIST, 2010 - 2015.</li>
-	<li>M.S. in Computer Science, KAIST, 2008 - 2010.</li>
-	<li>B.S. in Computer Science, KAIST, 2004 - 2008.</li>
-	<ul> <li>Presidential scholarship, the Korean government.</li> </ul>
+	<li>Software Engineer,
+        <a href="https://www.couchbase.com">Couchbase</a>,
+        2015 - present.
+    </li>
+	<li>Ph.D. in
+        <a href="https://cs.kaist.ac.kr">Computer Science</a>,
+        <a href="https://www.kaist.ac.kr">KAIST</a>,
+        2010 - 2015.
+    </li>
+	<li>M.S. in
+        <a href="https://cs.kaist.ac.kr">Computer Science</a>,
+        <a href="https://www.kaist.ac.kr">KAIST</a>,
+        2008 - 2010.
+    </li>
+	<li>B.S. in
+        <a href="https://cs.kaist.ac.kr">Computer Science</a>,
+        <a href="https://www.kaist.ac.kr">KAIST</a>,
+        2004 - 2008.
+    	<ul>
+            <li>Presidential scholarship, the Korean government.</li>
+        </ul>
+    </li>
 	<li><a href="http://www.djs.hs.kr/">Daejeon Science High School</a>,
 	2002 - 2004.</li>
 </ul>
@@ -69,17 +86,19 @@ Software Engineer at Couchbase</span></p>
     <li><b>Primary index storage layer improvement</b>
     <ul>
         <li>Designing/revising storage engine architecture.</li>
-        <li>Optimizing performance of disk I/O operation.</li>
+        <li>Optimizing disk I/O patterns.</li>
     </ul><p> </p>
     </li>
 
-    <li><b>ForestDB project</b>
+    <li><b><a href="https://github.com/couchbase/forestdb">ForestDB</a>
+        project</b>
     <ul>
         <li>Open source standalone storage engine.</li>
         <li>The original inventor: designed and developed of its main index
             structure (HB+trie), and other fundamental concepts.</li>
-        <li>Paper: <i>ForestDB: A Fast Key-Value Storage System for
-                   Variable-Length String Keys, IEEE TC 2016.</i></li>
+        <li>Paper: <i><a href="index.htm#paper_forestdb" target=_self>
+                   ForestDB: A Fast Key-Value Storage System for
+                   Variable-Length String Keys</a>, IEEE TC 2016.</i></li>
     </ul><p> </p>
     </li>
 
@@ -97,8 +116,9 @@ Research Assistant at KAIST</span></p>
         <li>Worked on core mobile kernel part,
             designed and developed a lightweight encryption file system
             for Android platform.</li>
-        <li>Paper: <i>Low-Overhead User Data Protection for Smartphones
-                   using Plaintext Cache, IEEE Most 2013.</i></li>
+        <li>Paper: <i><a href="index.htm#paper_most" target=_self>
+                   Low-Overhead User Data Protection for Smartphones
+                   using Plaintext Cache</a>, IEEE Most 2013.</i></li>
     </ul><p> </p>
     </li>
 
@@ -121,8 +141,9 @@ Research Assistant at KAIST</span></p>
         <li>Worked on mapping and indexing part, designed and developed
             a flash-optimzied index structure, called μ∗-tree, which is the
             main mapping structure for the FTL.</li>
-        <li>Paper: <i>μ*-Tree: An Ordered Index Structure for NAND Flash Memory
-                   with Adaptive Page Layout Scheme, IEEE TC 2013.</i></li>
+        <li>Paper: <i><a href="index.htm#paper_mutree" target=_self>
+                   μ*-Tree: An Ordered Index Structure for NAND Flash Memory
+                   with Adaptive Page Layout Scheme</a>, IEEE TC 2013.</i></li>
     </ul><p> </p>
     </li>
 
@@ -152,12 +173,56 @@ Teaching Assistant at KAIST</span></p>
 
 <p>&nbsp;</p>
 <o><span style="font-size: 14pt; font-weight: 700">
+Personal Projects</span></p>
+
+<ul>
+
+    <li>
+        <b><a href="https://github.com/greensky00/skiplist">
+        Generic Skiplist container</a></b><br>
+        <ul>
+            <li>Skiplist implementation that can be used as set or map,
+                containing any type of data.</li>
+            <li>Completely lock-free for concurrent readers and writers.</li>
+            <li>Scalable throughput according to the number of threads.</li>
+        </ul>
+        <p> </p>
+    </li>
+
+    <li>
+        <b><a href="https://github.com/greensky00/partiallock">
+        Partial lock</a></b><br>
+        <ul>
+            <li>Grab a Lock on a small part of a large shared data, without
+                blocking other locks on non-overlapping parts.</li>
+        </ul>
+        <p> </p>
+    </li>
+
+    <li>
+        <b><a href="https://github.com/greensky00/avltree">
+        C-style generic AVL-tree container</a></b><br>
+        <ul>
+            <li>An ordered index that can be used as set or map,
+                containing any type of data.</li>
+            <li>Can be used in pure C.</li>
+            <li>Up to 3x faster than STL set or map.</li>
+        </ul>
+        <p> </p>
+    </li>
+</ul>
+
+<!-- ====== Publication ====== -->
+
+<p>&nbsp;</p>
+<o><span style="font-size: 14pt; font-weight: 700">
 Publications and Patents</span></p>
 
 <ul>
     <li>
+        <a name="paper_forestdb">
         <b>ForestDB: A Fast Key-Value Storage System for Variable-Length String
-        Keys</b><br>
+        Keys</b></a><br>
         <u>Jung-Sang Ahn</u>, Chiyoung Seo, Ravi Mayuram, Rahim Yaseen,
         Jin-Soo Kim, and Seungryoul Maeng<br>
         IEEE Transactions on Computers, 2016.
@@ -165,8 +230,9 @@ Publications and Patents</span></p>
     </li>
 
     <li>
+        <a name="paper_most">
         <b>Low-Overhead User Data Protection for Smartphones using
-        Plaintext Cache</b><br>
+        Plaintext Cache</b></a><br>
         <u>Jung-Sang Ahn</u> and Seungryoul Maeng<br>
         Mobile Security Technologies (IEEE Symposium on Security and Privacy),
         2013.
@@ -174,8 +240,9 @@ Publications and Patents</span></p>
     </li>
 
     <li>
+        <a name="paper_mutree">
         <b>μ*-Tree: An Ordered Index Structure for NAND Flash Memory with
-        Adaptive Page Layout Scheme</b><br>
+        Adaptive Page Layout Scheme</b></a><br>
         <u>Jung-Sang Ahn</u>, Dongwon Kang, Dawoon Jung, Jin-Soo Kim,
         and Seungryoul Maeng<br>
         IEEE Transactions on Computers, 2013.
