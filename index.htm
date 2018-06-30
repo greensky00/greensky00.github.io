@@ -96,100 +96,59 @@ Employment and Education</span></p>
 <p><span style="font-size: 14pt; font-weight: 700">Experiences</span></p>
 
 <p>&nbsp;<span style="font-size: 12pt; font-weight: 700">
-MTS at eBay</span></p>
+eBay</span></p>
 
 <ul>
-    <li><b>Development of next-generation distributed database platform</b>
+    <li><b>Development of next-generation distributed database core engine</b>
     <ul>
-        <li>Eventually/strongly consistent replication engine based on Paxos, 
-             Raft, and etc.</li>
+        <li>Eventually/strongly consistent replication engine based on Paxos,
+             Raft, and variants.</li>
+        <li>Active-active (multi-master) replication and conflict resolution logic.</li>
         <li>Storage engine across geo-distributed replicas.</li>
     </ul><p> </p>
     </li>
 </ul>
 
 <p>&nbsp;<span style="font-size: 12pt; font-weight: 700">
-Software Engineer at Couchbase</span></p>
+Couchbase</span></p>
 
 <ul>
-    <li><b>Storage layer improvement</b>
-    <ul>
-        <li>Designing/revising storage engine (fetching/storing key-value
-            pairs from/to disks) architecture.</li>
-        <li>Optimizing disk I/O patterns.</li>
-    </ul><p> </p>
+    <li><b>Key-value storage engine</b></b>
+        <ul>
+        <li>Original inventor of <a href="https://github.com/couchbase/forestdb">
+             ForestDB</a></li>
+             <ul>
+             <li>MVCC key-value storage engine based on append-only index structure.</li>
+             </ul>
+        <li>Development of storage engine for NoSQL server & mobile platform.</li>
+        <li>Optimizing file system and disk I/O patterns.</li>
+        <li>Designing efficient index structures.</li>
+        </ul>
     </li>
-
-    <li><b><a href="https://github.com/couchbase/forestdb">ForestDB</a>
-        project</b>
-    <ul>
-        <li>Open source standalone storage engine based on a newly proposed
-            index structure.</li>
-        <li>The original inventor: designed and developed the index
-            structure (HB+trie), and other fundamental concepts.</li>
-        <li>Paper: <i><a href="index.htm#paper_forestdb" target=_self>
-                   ForestDB: A Fast Key-Value Storage System for
-                   Variable-Length String Keys</a>, IEEE TC 2016.</i></li>
-    </ul><p> </p>
-    </li>
-
 </ul>
 
 <p>&nbsp;<span style="font-size: 12pt; font-weight: 700">
-Research Assistant at KAIST</span></p>
+KAIST</span></p>
 
 <ul>
-    <li><b>UX-oriented mobile software platform</b>
-    <ul>
-        <li>A huge academic project in collaboration of 11 graduate school
-            laboratories and 2 companies including LG electronics,
-            funded by the Korean government.</li>
-        <li>Worked on core mobile kernel part,
-            designed and developed a lightweight encryption file system
-            for Android platform.</li>
-        <li>Paper: <i><a href="index.htm#paper_most" target=_self>
-                   Low-Overhead User Data Protection for Smartphones
-                   using Plaintext Cache</a>, IEEE Most 2013.</i></li>
-    </ul><p> </p>
+    <li><b>Index structures for block devices</b>
+        <ul>
+        <li>Designing flash-optimized index structure for FTL
+            (Flash Translation Layer) in SSD controller.</li>
+        </ul><p> </p>
     </li>
 
-    <li><b>Development of a basis technology for trustworthy computing</b>
-    <ul>
-        <li>Funded by the Korean government.</li>
-    </ul><p> </p>
+    <li><b>Mobile/embedded device kernel</b>
+        <ul>
+        <li>Designing lightweight encryption file system for Android platform.</li>
+        <li>Linux kernel optimization.</li>
+        </ul><p> </p>
     </li>
-
-    <li><b>Exploiting object-based interface for SSDs</b>
-    <ul>
-        <li>Funded by Samsung.</li>
-    </ul><p> </p>
-    </li>
-
-    <li><b>A high-performance FTL for large-capacity flash SSDs</b>
-    <ul>
-        <li>Development of fast and memory-efficient flash translation layer
-           (FTL) for commercial SSDs, funded by Samsung.</li>
-        <li>Worked on mapping and indexing part, designed and developed
-            a flash-optimzied index structure, called μ∗-tree, which is the
-            main mapping structure for the FTL.</li>
-        <li>Paper: <i><a href="index.htm#paper_mutree" target=_self>
-                   μ*-Tree: An Ordered Index Structure for NAND Flash Memory
-                   with Adaptive Page Layout Scheme</a>, IEEE TC 2013.</i></li>
-    </ul><p> </p>
-    </li>
-
-    <li><b>Development of environment for ubiquitous/embedded system software</b>
-    <ul>
-        <li>Research on development tool for next-generation flash memory.</li>
-        <li>Funded by the Korean government.</li>
-    </ul><p> </p>
-    </li>
-
 </ul>
 
+<!--
 <p>&nbsp;<span style="font-size: 12pt; font-weight: 700">
 Teaching Assistant at KAIST</span></p>
-
 <ul>
     <li>CS310 Embedded Computer Systems (won TA Excellence Award), Fall 2010.</li>
     <li>CS211 Digital System and Lab, Spring 2010.</li>
@@ -198,7 +157,7 @@ Teaching Assistant at KAIST</span></p>
     <li>CS330 Operating System and Lab, Fall 2008.</li>
     <li>CS320 Programming Language, Spring 2008.</li>
 </ul>
-
+-->
 
 
 <!-- ====== Publication ====== -->
@@ -209,39 +168,52 @@ Personal Projects</span></p>
 
 <ul>
 
-    <li>
-        <b><a href="https://github.com/greensky00/skiplist">
-        Generic Skiplist container</a></b><br>
+    <li><b><a href="https://github.com/greensky00/skiplist">
+        Generic lock-free Skiplist container</a></b><br>
         <ul>
-            <li>Skiplist implementation that can be used as set or map,
-                containing any type of data.</li>
-            <li>Completely lock-free for concurrent readers and writers.</li>
-            <li>Scalable throughput according to the number of threads.</li>
-        </ul>
-        <p> </p>
+        <li>Pure C-style container based on
+            <a href="https://en.wikipedia.org/wiki/Skip_list">Skiplist</a>,
+            supporting any type of data.</li>
+        <li>Lock-free: multiple readers and writers.</li>
+        </ul><p> </p>
     </li>
 
-    <li>
-        <b><a href="https://github.com/greensky00/partiallock">
-        Partial lock</a></b><br>
+    <li><b><a href="https://github.com/greensky00/avltree">
+        Generic AVL-tree container</a></b><br>
         <ul>
-            <li>Grab a Lock on a small part of a large shared data, without
-                blocking other locks on non-overlapping parts.</li>
-        </ul>
-        <p> </p>
+        <li>Pure C-style container based on
+            <a href="https://en.wikipedia.org/wiki/AVL_tree">AVL-tree</a>,
+            supporting any type of data.</li>
+        <li>Up to 3x faster than STL set or map.</li>
+        </ul><p> </p>
     </li>
 
-    <li>
-        <b><a href="https://github.com/greensky00/avltree">
-        C-style generic AVL-tree container</a></b><br>
+    <li><b><a href="https://github.com/greensky00/testsuite">
+        Test Suite</a></b><br>
         <ul>
-            <li>An ordered index that can be used as set or map,
-                containing any type of data.</li>
-            <li>Can be used in pure C.</li>
-            <li>Up to 3x faster than STL set or map.</li>
-        </ul>
-        <p> </p>
+        <li>Lightweight (a single header file) test suite for C++ program.</li>
+        </ul><p> </p>
     </li>
+
+    <li><b><a href="https://github.com/greensky00/simple_logger">
+        Simple Logger</a></b><br>
+        <ul>
+        <li>Lightweight and lock-free logging library for C++ program.</li>
+        </ul><p> </p>
+    </li>
+
+    <li><b><a href="https://github.com/greensky00/latency-collector">
+        Latency Collector</a></b><br>
+        <ul>
+        <li>Lightweight embedded library to measure latencies of C++ program.</li>
+        </ul><p> </p>
+    </li>
+
+    <li><b><a href="https://github.com/greensky00/hex-dump">
+        Hex Dump</a></b><p> </p>
+    </li>
+
+
 </ul>
 
 
