@@ -1,32 +1,114 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>greensky00</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00cc00;
+      font-family: Consolas, monospace;
+      margin: 0;
+      padding: 2em;
+      position: relative;
+      text-shadow: 0 0 5px #00cc00, 0 0 10px #00cc00;
+    }
 
-<!--<meta http-equiv="Content-Language" content="ko">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF8">-->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Jung-Sang Ahn's Personal Website </title>
-<base target="_blank">
+    h1, h2, h3, h4 {
+      color: #00cc00;
+      border-bottom: 1px solid #00cc00;
+      padding-bottom: 0.3em;
+    }
 
+    a {
+      color: #00cc00;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #aaffaa;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #00cc00;
+      margin: 2em 0;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00cc00;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .section {
+      margin-bottom: 2em;
+    }
+
+    /* CRT scanline + flicker overlay */
+    .crt-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 999;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.04),
+        rgba(0, 255, 0, 0.04) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+    }
+
+    .crt-glow {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 998;
+      background: radial-gradient(circle at center, rgba(0, 255, 0, 0.05), transparent 80%);
+      mix-blend-mode: lighten;
+    }
+  </style>
 </head>
 
-
 <body topmargin="32" leftmargin="32" rightmargin="32" bottommargin="32"
-      style="font-family: Myriad Pro;
-             font-size: 11pt;
+      style="font-size: 11pt;
              line-height: 1.3em"
       text="#333333" link="#336699" vlink="#336699" alink="#336699">
+
+  <div class="crt-overlay"></div>
+  
 <p><img src="./jsahn.jpg"></p>
 
 <p><span style="font-size: 14pt; font-weight: 700">
 Jung-Sang Ahn</span></p>
 
-<p><span style="font-size: 12pt; font-family: 맑은고딕; font-weight: 700">
-안정상 (in Korean)</span></p>
+<p><span style="font-size: 12pt; font-weight: 700">
+안정상 (in Korean)</span><br>
+Software Engineer at eBay.
+</p>
 
-<p>Software Engineer at eBay.<br>
+<p>
 <a href="https://www.linkedin.com/in/jungsangahn">LinkedIn</a><br>
 <a href="https://github.com/greensky00">Github</a><br>
+YouTube
+<a href="https://www.youtube.com/user/greensky00">
+[Music]</a>
+<a href="https://www.youtube.com/@greenskytrackday">
+[Trackday]</a><br>
+<a href="https://soundcloud.com/jungsangahn">
+SoundCloud</a>
+
 <!--<a href="./jsahn_cv_11.pdf">Resume (Jul, 2017)</a>-->
 </p>
 
@@ -41,12 +123,28 @@ Jung-Sang Ahn</span></p>
 Interests</span></p>
 
 <ul>
-    <li>Indexing, caching, replication, key-value store.
-    <li>Distributed systems, storage/file systems, operating systems.</li>
-    <li>Problem solving, optimizing performance.</li>
-    <li>Electric/acoustic guitar, finger-style guitar, band session,
-        song writing, recording/mixing/mastering.</li>
-    <li>Snowboarding, go-kart, road cycling, high performance driving.</li>
+    <li>Distributed systems
+	<ul>
+		<li>Replication/consensus protocol (Paxos, Raft)</li>
+		<li>On-disk indexing (B+tree, LSM-tree)</li>
+		<li>Secondary indexing</li>
+		<li>Query processing</li>
+		<li>Transaction</li>
+		<li>Caching</li>
+	</ul>
+	</li>
+    <li>Music<ul>
+		<li>Electric/acoustic guitar</li>
+		<li>Finger-style guitar</li>
+		<li>Song writing</li>
+		<li>Recording, mixing, and mastering</li>
+	</ul></li>
+	<li>Sports<ul>
+		<li>Snowboarding</li>
+		<li>Trackday</li>
+		<li>Road bike</li>
+		<li>Go-kart</li>
+	</ul></li>
 </ul>
 
 <!-- ====== Education ====== -->
@@ -55,7 +153,7 @@ Interests</span></p>
 <br>Employment and Education</span></p>
 
 <ul>
-    <li>Member of Technical Staff, Distributed Systems,
+    <li>Principal MTS (Director),
         <a href="https://www.ebayinc.com/">eBay</a>,
         2017 - present.
     </li>
@@ -65,13 +163,13 @@ Interests</span></p>
     </li>
     <li>Ph.D. in
         <a href="https://cs.kaist.ac.kr">Computer Science</a>
-        <a href="http://casys.kaist.ac.kr/">(Computer Architecture and Systems Lab)</a>,
+        <a href="https://casyslab.kaist.ac.kr">(Computer Architecture and Systems Lab)</a>,
         <a href="https://www.kaist.ac.kr">KAIST</a>,
         2010 - 2015.
     </li>
     <li>M.S. in
         <a href="https://cs.kaist.ac.kr">Computer Science</a>
-        <a href="http://casys.kaist.ac.kr/">(Computer Architecture and Systems Lab)</a>,
+        <a href="https://casyslab.kaist.ac.kr">(Computer Architecture and Systems Lab)</a>,
         <a href="https://www.kaist.ac.kr">KAIST</a>,
         2008 - 2010.
     </li>
@@ -102,23 +200,27 @@ Interests</span></p>
 eBay</span></p>
 
 <ul>
-    <li><b>Lead developer of distributed database core engine</b><br>
-        (Designed and developed in-house engines from scratch)
+    <li><b>Development of eBay's own database fleet</b></li>
     <ul>
-        <li>Replication engine: Paxos, Raft, and variants.</li>
+		<li>Geo-distributed, highly available databases serving trillions of requests/day.</li>
+		<li>Multi-master key-value store, global secondary index store, document store, graph store.</li>
+        <li>Own replication engine based on Raft and variants.</li>
         <ul><li>Original author of <a href="https://github.com/eBay/NuRaft">NuRaft</a></li>
         </ul>
-        <li>Storage engine: B+tree, LSM-tree,
-            append-only logs, and variants.</li>
+        <li>Own storage engine based on LSM-tree, B+tree, and variants.</li>
         <ul><li>Original author of <a href="https://github.com/eBay/Jungle">Jungle</a></li>
         </ul>
-        <li>Query engine: executing SQL-like expressions using low-level key-value store operations.</li>
-        <li>Distributed transaction.</li>
-        <li>Multi-master replication across multiple data centers, and its conflict resolution logic.</li>
-        <li>Synchronous and unique global secondary index.</li>
-        <li>Continuous backup and point-in-time restoration.</li>
-        <li>Change data capture, pipelining operation and re-do logs.</li>
-        <li>Management of the entire life cycle of products: designing, development, testing, deployment, operation, and monitoring.</li>
+        <li>Own query engine that processes SQL-like requests through low-level key-value operations.</li>
+	</ul><br>
+	
+	<li><b>Core functionalities</b></li>
+    <ul>
+        <li>Distributed transaction, failover & recovery, backup & restore.</li>
+        <li>Online partition rebalancing, throttling & rate limiting.</li>
+	</ul><br>
+	<li><b>Product life cycle management</b></li>
+    <ul>	
+        <li>Overseeing design, development, testing, deployment, operation, and monitoring.</li>
     </ul><p> </p>
     </li>
 </ul>
@@ -171,7 +273,7 @@ Teaching Assistant at KAIST</span></p>
 -->
 
 
-<!-- ====== Publication ====== -->
+<!-- ====== Publication ====== 
 
 <p><span style="font-size: 14pt; font-weight: 700">
 <br>Personal Projects</span></p>
@@ -225,7 +327,7 @@ Teaching Assistant at KAIST</span></p>
 
 
 </ul>
-
+-->
 
 
 <!-- ====== Publication ====== -->
@@ -401,25 +503,21 @@ Teaching Assistant at KAIST</span></p>
 <!-- ====== Contact ====== -->
 
 <p><span style="font-size: 14pt; font-weight: 700">
-<br>Contact Information</span></p>
+<br>Contact</span></p>
 
 
 <ul>
     <li>E-mail: jungsang . ahn [at] gmail . com</li>
-    <li>
-        YouTube Channel
-        <a href="https://www.youtube.com/user/greensky00">
-        [Music]</a>
-        <a href="https://www.youtube.com/@greenskytrackday">
-        [Trackday]</a>
-    </li>
-    <li>
-        <a href="https://soundcloud.com/jungsangahn">
-        SoundCloud</a>
-    </li>
 
 
 </ul>
+
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer'); // 보안상 권장
+  });
+</script>
 
 </body>
 
