@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jung-Sang Ahn's Personal Webpage</title>
-  <style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jung-Sang Ahn's Personal Webpage</title>
+<style>
+    @font-face {
+      font-family: 'Cascadia Mono';
+      src: url('fonts/CascadiaMono.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       background-color: black;
       color: #00cc00;
-      font-family: Consolas, monospace;
+      font-family: "Cascadia Mono", "Consolas";
       margin: 0;
       padding: 0.4em;
       position: relative;
@@ -51,16 +58,16 @@
       margin-bottom: 2em;
     }
 
-	ul, ol {
-	  margin-left: 0; /* Reset default margin */
-	  padding-left: 1.0em; /* Set desired indentation */
-	}
+    ul, ol {
+      margin-left: 0; /* Reset default margin */
+      padding-left: 1.0em; /* Set desired indentation */
+    }
 
-	li {
-	  margin-left: 0 /* Reset default margin */
-	  padding-left: 0; /* Reset default padding */
-	}
-	
+    li {
+      margin-left: 0 /* Reset default margin */
+      padding-left: 0; /* Reset default padding */
+    }
+    
     /* CRT scanline + flicker overlay */
     .crt-overlay {
       position: fixed;
@@ -88,12 +95,12 @@
       background: radial-gradient(circle at center, rgba(0, 255, 0, 0.05), transparent 80%);
       mix-blend-mode: lighten;
     }
-  </style>
+</style>
 </head>
 
-<body style="font-size: 10.5pt; line-height: 1.5em">
+<body style="font-size: 10.2pt; line-height: 1.6em">
 
-  <div class="crt-overlay"></div>
+<div class="crt-overlay"></div>
   
 <p><img src="./jsahn_crt_mono.jpg"></p>
 
@@ -130,28 +137,28 @@ SoundCloud</a>
 Interests</span></p>
 
 <ul>
-    <li>Distributed systems
-	<ul>
-		<li>Replication/consensus protocol (Paxos, Raft)</li>
-		<li>On-disk indexing (B+tree, LSM-tree)</li>
-		<li>Secondary indexing</li>
-		<li>Query processing</li>
-		<li>Transaction and conflict resolution</li>
-		<li>Caching</li>
-	</ul>
-	</li>
-    <li>Music<ul>
-		<li>Electric/acoustic guitar</li>
-		<li>Fingerstyle guitar</li>
-		<li>Songwriting</li>
-		<li>Recording, mixing, and mastering</li>
-	</ul></li>
-	<li>Sports<ul>
-		<li>Snowboarding</li>
-		<li>Trackday</li>
-		<li>Road bike</li>
-		<li>Go-kart</li>
-	</ul></li>
+<li>Distributed systems
+<ul>
+    <li>Replication/consensus protocol (Paxos, Raft)</li>
+    <li>On-disk indexing (B+tree, LSM-tree)</li>
+    <li>Secondary indexing</li>
+    <li>Query processing</li>
+    <li>Transaction and conflict resolution</li>
+    <li>Caching</li>
+</ul>
+</li>
+<li>Music<ul>
+    <li>Electric/acoustic guitar</li>
+    <li>Fingerstyle guitar</li>
+    <li>Songwriting</li>
+    <li>Recording, mixing, and mastering</li>
+</ul></li>
+<li>Sports<ul>
+    <li>Snowboarding</li>
+    <li>Trackday</li>
+    <li>Road bike</li>
+    <li>Go-kart</li>
+</ul></li>
 </ul>
 
 <!-- ====== Education ====== -->
@@ -160,104 +167,110 @@ Interests</span></p>
 <br>Employment and Education</span></p>
 
 <ul>
-    <li><b>Principal MTS (Director)</b>,
-        <a href="https://www.ebayinc.com/">eBay</a>,
-        2017-present.
-    </li>
-    <li><b>Senior Software Engineer</b>,
-        <a href="https://www.couchbase.com">Couchbase</a>,
-        2015-2017.
-    </li>
-    <li><b>Ph.D.</b> in <a href="https://cs.kaist.ac.kr">Computer Science</a>, 
-        <a href="https://casyslab.kaist.ac.kr">CASYS lab</a>,
-        <a href="https://www.kaist.ac.kr/en/">KAIST</a>,
-        2010-2015.
-    </li>
-    <li><b>M.S.</b> in <a href="https://cs.kaist.ac.kr">Computer Science</a>, 
-        <a href="https://casyslab.kaist.ac.kr">CASYS lab</a>,
-        <a href="https://www.kaist.ac.kr/en/">KAIST</a>,
-        2008-2010.
-    </li>
-    <li><b>B.S.</b> in <a href="https://cs.kaist.ac.kr">Computer Science</b></a>,
-        <a href="https://www.kaist.ac.kr/en/">KAIST</a>,
-        2004-2008.
-        <ul>
-            <li>Presidential scholarship, the Korean government.</li>
-        </ul>
-    </li>
-    <li><a href="https://endjshs.djsch.kr/main.do">Daejeon Science High School</a>,
-        2002-2004.
-        <ul>
-            <li>Early graduation, 2 years.</li>
-        </ul>
-    </li>
+<li><b>Principal MTS (Director)</b>,
+    <a href="https://www.ebayinc.com/">eBay</a>,
+    2017-present.
+</li>
+<li><b>Senior Software Engineer</b>,
+    <a href="https://www.couchbase.com">Couchbase</a>,
+    2015-2017.
+</li>
+<li><b>Ph.D.</b> in <a href="https://cs.kaist.ac.kr">Computer Science</a>, 
+    <a href="https://casyslab.kaist.ac.kr">CASYS lab</a>,
+    <a href="https://www.kaist.ac.kr/en/">KAIST</a>,
+    2010-2015.
+</li>
+<li><b>M.S.</b> in <a href="https://cs.kaist.ac.kr">Computer Science</a>, 
+    <a href="https://casyslab.kaist.ac.kr">CASYS lab</a>,
+    <a href="https://www.kaist.ac.kr/en/">KAIST</a>,
+    2008-2010.
+</li>
+<li><b>B.S.</b> in <a href="https://cs.kaist.ac.kr">Computer Science</b></a>,
+    <a href="https://www.kaist.ac.kr/en/">KAIST</a>,
+    2004-2008.
+    <ul>
+        <li>Presidential scholarship, the Korean government.</li>
+    </ul>
+</li>
+<li><a href="https://endjshs.djsch.kr/main.do">Daejeon Science High School</a>,
+    2002-2004.
+    <ul>
+        <li>Early graduation, 2 years.</li>
+    </ul>
+</li>
 </ul>
 
 
 
 <!-- ====== Experience ====== -->
+<!-- --------------------- -->
 
 <p><span style="font-size: 14pt; font-weight: 700">
 <br>eBay</span></p>
 
 <ul>
-    <li><b>Development of eBay's own database fleet</b></li>
-    <ul>
-		<li>Geo-distributed, highly available databases serving trillions of requests/day.</li>
-		<li>Multi-master key-value store, global secondary index store, document store, graph store.</li>
-        <li>Own replication engine based on Raft and variants.</li>
-        <ul><li>Original author of <a href="https://github.com/eBay/NuRaft">NuRaft</a></li>
-        </ul>
-        <li>Own storage engine based on LSM-tree, B+tree, and variants.</li>
-        <ul><li>Original author of <a href="https://github.com/eBay/Jungle">Jungle</a></li>
-        </ul>
-        <li>Own query engine that processes SQL-like requests through low-level key-value operations.</li>
-	</ul><br>
-	
-	<li><b>Core functionalities</b></li>
-    <ul>
-        <li>Distributed transaction, failover & recovery, backup & restore.</li>
-        <li>Online partition rebalancing, throttling & rate limiting.</li>
-	</ul><br>
-	<li><b>Product life cycle management</b></li>
-    <ul>	
-        <li>Overseeing design, development, testing, deployment, operation, and monitoring.</li>
-    </ul><p> </p>
-    </li>
+<li><b>Development of eBay's own database fleet</b></li>
+<ul>
+    <li>Geo-distributed, highly available databases serving trillions of requests/day.</li>
+    <li>Multi-master key-value store, global secondary index store, document store, graph store.</li>
+    <li>Own replication engine based on Raft and variants.</li>
+    <ul><li>Original author of <a href="https://github.com/eBay/NuRaft">NuRaft</a></li>
+    </ul>
+    <li>Own storage engine based on LSM-tree, B+tree, and variants.</li>
+    <ul><li>Original author of <a href="https://github.com/eBay/Jungle">Jungle</a></li>
+    </ul>
+    <li>Own query engine that processes SQL-like requests through low-level key-value operations.</li>
+</ul><br>
+
+<li><b>Core functionalities</b></li>
+<ul>
+    <li>Distributed transaction, failover & recovery, backup & restore.</li>
+    <li>Online partition rebalancing, throttling & rate limiting.</li>
+</ul><br>
+<li><b>Product life cycle management</b></li>
+<ul>    
+    <li>Overseeing design, development, testing, deployment, operation, and monitoring.</li>
+</ul><p> </p>
+</li>
 </ul>
+
+<!-- --------------------- -->
 
 <p><span style="font-size: 14pt; font-weight: 700">
 <br>Couchbase</span></p>
 
 <ul>
-    <li><b>Key-value storage engine</b></b>
-        <ul>
-        <li>Original author of
-            <a href="https://github.com/couchbase/forestdb">
-            ForestDB</a></li>
-        <li>Storage engine embedded in NoSQL server & mobile platform.</li>
-        <li>Optimizing file system and disk I/O patterns.</li>
-        </ul>
-    </li>
+<li><b>Key-value storage engine</b></b>
+    <ul>
+    <li>Original author of
+        <a href="https://github.com/couchbase/forestdb">
+        ForestDB</a></li>
+    <li>Storage engine embedded in NoSQL server & mobile platform.</li>
+    <li>Optimizing file system and disk I/O patterns.</li>
+    </ul>
+</li>
 </ul>
+
+
+<!-- --------------------- -->
 
 <p><span style="font-size: 14pt; font-weight: 700">
 <br>KAIST</span></p>
 
 <ul>
-    <li><b>Index structures for block devices</b>
-        <ul>
-        <li>Designing flash-optimized index structure for FTL
-            (Flash Translation Layer) in SSD controller.</li>
-        </ul><p> </p>
-    </li>
+<li><b>Index structures for block devices</b>
+    <ul>
+    <li>Designing flash-optimized index structure for FTL
+        (Flash Translation Layer) in SSD controller.</li>
+    </ul><p> </p>
+</li>
 
-    <li><b>Mobile/embedded device kernel</b>
-        <ul>
-        <li>Designing lightweight encryption file system for Android platform.</li>
-        <li>Linux kernel optimization.</li>
-        </ul><p> </p>
-    </li>
+<li><b>Mobile/embedded device kernel</b>
+    <ul>
+    <li>Designing lightweight encryption file system for Android platform.</li>
+    <li>Linux kernel optimization.</li>
+    </ul><p> </p>
+</li>
 </ul>
 
 <!--
@@ -337,93 +350,92 @@ Teaching Assistant at KAIST</span></p>
 <br>Publications and Patents</span></p>
 
 <ul>
-    <li>
-        <b>Designing an Efficient Replicated Log Store with Consensus Protocol
-           [<a href="./pdf/logstore_hotcloud19.pdf">PDF</a>]</b><br>
-        <u>Jung-Sang Ahn</u>, Woon-Hak Kang, Kun Ren, Guogen Zhang,
-        and Sami Ben-Romdhane<br>
-        USENIX HotCloud, 2019.
-        <p> </p>
-    </li>
+<li>
+    <b>Designing an Efficient Replicated Log Store with Consensus Protocol
+       [<a href="./pdf/logstore_hotcloud19.pdf">PDF</a>]</b><br>
+    <u>Jung-Sang Ahn</u>, Woon-Hak Kang, Kun Ren, Guogen Zhang,
+    and Sami Ben-Romdhane<br>
+    USENIX HotCloud, 2019.
+    <p> </p>
+</li>
 
-    <li>
-        <b>Jungle: Towards Dynamically Adjustable Key-Value Store
-        by Combining LSM-Tree and Copy-On-Write B+-Tree
-        [<a href="./pdf/jungle_hotstorage19.pdf">PDF</a>]</b><br>
-        <u>Jung-Sang Ahn</u>, Mohiuddin Abdul Qader, Woon-Hak Kang,
-        Hieu Nguyen, Guogen Zhang, and Sami Ben-Romdhane<br>
-        USENIX HotStorage, 2019.
-        <p> </p>
-    </li>
+<li>
+    <b>Jungle: Towards Dynamically Adjustable Key-Value Store
+    by Combining LSM-Tree and Copy-On-Write B+-Tree
+    [<a href="./pdf/jungle_hotstorage19.pdf">PDF</a>]</b><br>
+    <u>Jung-Sang Ahn</u>, Mohiuddin Abdul Qader, Woon-Hak Kang,
+    Hieu Nguyen, Guogen Zhang, and Sami Ben-Romdhane<br>
+    USENIX HotStorage, 2019.
+    <p> </p>
+</li>
 
-    <li>
-        <b>GRIT: Consistent Distributed Transactions across Polyglot
-        Microservices with Multiple Databases
-        [<a href="./pdf/grit_icde19.pdf">PDF</a>]</b><br>
-        Guogen Zhang, Kun Ren, <u>Jung-Sang Ahn</u>, and Sami Ben-Romdhane<br>
-        IEEE International Conference on Data Engineering (ICDE) (Demo), 2019.
-        <p> </p>
-    </li>
+<li>
+    <b>GRIT: Consistent Distributed Transactions across Polyglot
+    Microservices with Multiple Databases
+    [<a href="./pdf/grit_icde19.pdf">PDF</a>]</b><br>
+    Guogen Zhang, Kun Ren, <u>Jung-Sang Ahn</u>, and Sami Ben-Romdhane<br>
+    IEEE International Conference on Data Engineering (ICDE) (Demo), 2019.
+    <p> </p>
+</li>
 
-    <li>
-        <b>Session Guarantees with Raft and Hybrid Logical Clocks</b><br>
-        Mohammad Roohitavaf, <u>Jung-Sang Ahn</u>, Woon-Hak Kang, Kun Ren,
-        Gene Zhang, Sami Ben-Romdhane, and Sandeep S. Kulkarni<br>
-        International Conference on Distributed Computing and Networking (ICDCN), 2019.
-        <p> </p>
-    </li>
+<li>
+    <b>Session Guarantees with Raft and Hybrid Logical Clocks</b><br>
+    Mohammad Roohitavaf, <u>Jung-Sang Ahn</u>, Woon-Hak Kang, Kun Ren,
+    Gene Zhang, Sami Ben-Romdhane, and Sandeep S. Kulkarni<br>
+    International Conference on Distributed Computing and Networking (ICDCN), 2019.
+    <p> </p>
+</li>
 
-    <li>
-        <b>Key-Value Replication with Consensus Protocol</b><br>
-        Sami Ben-Romdhane, <u>Jung-Sang Ahn</u>, and Guogen Zhang<br>
-        Patent No. 10838977 (December 26, 2019), United States.
-        <p> </p>
-    </li>
+<li>
+    <b>Key-Value Replication with Consensus Protocol</b><br>
+    Sami Ben-Romdhane, <u>Jung-Sang Ahn</u>, and Guogen Zhang<br>
+    Patent No. 10838977 (December 26, 2019), United States.
+    <p> </p>
+</li>
 
-    <li>
-        <a name="paper_forestdb">
-        <b>ForestDB: A Fast Key-Value Storage System for Variable-Length String
-        Keys</b></a><br>
-        <u>Jung-Sang Ahn</u>, Chiyoung Seo, Ravi Mayuram, Rahim Yaseen,
-        Jin-Soo Kim, and Seungryoul Maeng<br>
-        IEEE Transactions on Computers, 2016.
-        <p> </p>
-    </li>
+<li>
+    <a name="paper_forestdb">
+    <b>ForestDB: A Fast Key-Value Storage System for Variable-Length String
+    Keys</b></a><br>
+    <u>Jung-Sang Ahn</u>, Chiyoung Seo, Ravi Mayuram, Rahim Yaseen,
+    Jin-Soo Kim, and Seungryoul Maeng<br>
+    IEEE Transactions on Computers, 2016.
+    <p> </p>
+</li>
 
-    <li>
-        <a name="paper_most">
-        <b>Low-Overhead User Data Protection for Smartphones using
-        Plaintext Cache</b></a><br>
-        <u>Jung-Sang Ahn</u> and Seungryoul Maeng<br>
-        Mobile Security Technologies (IEEE Symposium on Security and Privacy),
-        2013.
-        <p> </p>
-    </li>
+<li>
+    <a name="paper_most">
+    <b>Low-Overhead User Data Protection for Smartphones using
+    Plaintext Cache</b></a><br>
+    <u>Jung-Sang Ahn</u> and Seungryoul Maeng<br>
+    Mobile Security Technologies (IEEE Symposium on Security and Privacy),
+    2013.
+    <p> </p>
+</li>
 
-    <li>
-        <a name="paper_mutree">
-        <b>μ*-Tree: An Ordered Index Structure for NAND Flash Memory with
-        Adaptive Page Layout Scheme</b></a><br>
-        <u>Jung-Sang Ahn</u>, Dongwon Kang, Dawoon Jung, Jin-Soo Kim,
-        and Seungryoul Maeng<br>
-        IEEE Transactions on Computers, 2013.
-        <p> </p>
-    </li>
+<li>
+    <a name="paper_mutree">
+    <b>μ*-Tree: An Ordered Index Structure for NAND Flash Memory with
+    Adaptive Page Layout Scheme</b></a><br>
+    <u>Jung-Sang Ahn</u>, Dongwon Kang, Dawoon Jung, Jin-Soo Kim,
+    and Seungryoul Maeng<br>
+    IEEE Transactions on Computers, 2013.
+    <p> </p>
+</li>
 
-    <li>
-        <b>Indexing Method for Flash Memory</b><br>
-        Jaesoo Lee, <u>Jung-Sang Ahn</u>, Jin-Soo Kim, and Dawoon Jung<br>
-        Patent No. 8799558 (August 5, 2014), United States.
-        <p> </p>
-    </li>
+<li>
+    <b>Indexing Method for Flash Memory</b><br>
+    Jaesoo Lee, <u>Jung-Sang Ahn</u>, Jin-Soo Kim, and Dawoon Jung<br>
+    Patent No. 8799558 (August 5, 2014), United States.
+    <p> </p>
+</li>
 
-    <li>
-        <b>Indexing Method for Flash Memory</b><br>
-        Jaesoo Lee, <u>Jung-Sang Ahn</u>, Jin-Soo Kim, and Dawoon Jung<br>
-        Patent No. 10-1699779 (January 19, 2017), Korea.
-        <p> </p>
-    </li>
-
+<li>
+    <b>Indexing Method for Flash Memory</b><br>
+    Jaesoo Lee, <u>Jung-Sang Ahn</u>, Jin-Soo Kim, and Dawoon Jung<br>
+    Patent No. 10-1699779 (January 19, 2017), Korea.
+    <p> </p>
+</li>
 </ul>
 
 
@@ -435,31 +447,31 @@ Teaching Assistant at KAIST</span></p>
 <br>Honors and Awards</span></p>
 
 <ul>
-    <li>
-        Third Place, <b>ACM SIGMOD Programming Contest</b>, 2012.<br>
-        <i><a href="http://wwwdb.inf.tu-dresden.de/sigmod2012contest/">
-        A Multi-Dimensional Indexing System</a></i>
-    </li>
-    <li>
-        Finalist, <b>ACM SIGMOD Programming Contest</b>, 2011.<br>
-        <i><a href="http://db.csail.mit.edu/sigmod11contest/">
-        A Durable Main-Memory Index Using Flash</a></i>
-    </li>
-    <li>
-        Bronze Prize, <b>Samsung Humantech Paper Award</b>, 2008.
-    </li>
-    <li>
-        Silver Prize, <b>Samsung Humantech Paper Award</b>, 2004.
-    </li>
-    <li>
-        Honorable Mention, <b>Samsung Humantech Paper Award</b>, 2003.
-    </li>
-    <li>
-        Finalist, <b>Intel ISEF (International Science and Engineering Fair)</b>, 2002.
-    </li>
-    <li>
-        Gold Medal, <b>KOI (Korea Olympiad in Informatics)</b>, 2001.
-    </li>
+<li>
+    Third Place, <b>ACM SIGMOD Programming Contest</b>, 2012.<br>
+    <i><a href="http://wwwdb.inf.tu-dresden.de/sigmod2012contest/">
+    A Multi-Dimensional Indexing System</a></i>
+</li>
+<li>
+    Finalist, <b>ACM SIGMOD Programming Contest</b>, 2011.<br>
+    <i><a href="http://db.csail.mit.edu/sigmod11contest/">
+    A Durable Main-Memory Index Using Flash</a></i>
+</li>
+<li>
+    Bronze Prize, <b>Samsung Humantech Paper Award</b>, 2008.
+</li>
+<li>
+    Silver Prize, <b>Samsung Humantech Paper Award</b>, 2004.
+</li>
+<li>
+    Honorable Mention, <b>Samsung Humantech Paper Award</b>, 2003.
+</li>
+<li>
+    Finalist, <b>Intel ISEF (International Science and Engineering Fair)</b>, 2002.
+</li>
+<li>
+    Gold Medal, <b>KOI (Korea Olympiad in Informatics)</b>, 2001.
+</li>
 </ul>
 
 
@@ -470,33 +482,33 @@ Teaching Assistant at KAIST</span></p>
 <br>Services</span></p>
 
 <ul>
-    <li>
-        Journal paper referee, ACM Transactions on Storage, 2020.
-    </li>
-    <li>
-        Program committee, Scalable Cloud Data Management (IEEE Big Data), 2020.
-    </li>
-    <li>
-        Program committee, Scalable Cloud Data Management (IEEE Big Data), 2019.
-    </li>
-    <li>
-        Program committee, Scalable Cloud Data Management (IEEE Big Data), 2018.
-    </li>
-    <li>
-        Journal paper referee, ACM Transactions on Storage, 2017.
-    </li>
-    <li>
-        Journal paper referee, IEEE Transactions on Computers, 2015.
-    </li>
-    <li>
-        Journal paper referee, IEEE Transactions on VLSI Systems, 2014.
-    </li>
-    <li>
-        Journal paper referee, IEEE Transactions on Computers, 2013.
-    </li>
-    <li>
-        Journal paper referee, IEEE Transactions on Computers, 2012.
-    </li>
+<li>
+    Journal paper referee, ACM Transactions on Storage, 2020.
+</li>
+<li>
+    Program committee, Scalable Cloud Data Management (IEEE Big Data), 2020.
+</li>
+<li>
+    Program committee, Scalable Cloud Data Management (IEEE Big Data), 2019.
+</li>
+<li>
+    Program committee, Scalable Cloud Data Management (IEEE Big Data), 2018.
+</li>
+<li>
+    Journal paper referee, ACM Transactions on Storage, 2017.
+</li>
+<li>
+    Journal paper referee, IEEE Transactions on Computers, 2015.
+</li>
+<li>
+    Journal paper referee, IEEE Transactions on VLSI Systems, 2014.
+</li>
+<li>
+    Journal paper referee, IEEE Transactions on Computers, 2013.
+</li>
+<li>
+    Journal paper referee, IEEE Transactions on Computers, 2012.
+</li>
 </ul>
 
 
@@ -509,14 +521,12 @@ Teaching Assistant at KAIST</span></p>
 
 <ul>
     <li>E-mail: jungsang . ahn [at] gmail . com</li>
-
-
 </ul>
 
 <script>
   document.querySelectorAll('a').forEach(link => {
     link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer'); // 보안상 권장
+    link.setAttribute('rel', 'noopener noreferrer');
   });
 </script>
 
